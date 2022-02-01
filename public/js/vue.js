@@ -50,7 +50,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "slider",
   props: {
@@ -572,9 +571,90 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div")
+  return _c(
+    "div",
+    {
+      staticClass: "carousel slide",
+      attrs: { id: "carouselExampleControls", "data-bs-ride": "carousel" },
+    },
+    [
+      _c(
+        "div",
+        { staticClass: "carousel-inner" },
+        _vm._l(_vm.dataList, function (movie, i) {
+          return _c(
+            "div",
+            {
+              key: movie.id,
+              staticClass: "carousel-item",
+              class: { active: i === 0 },
+            },
+            [
+              _c("img", {
+                staticClass: "d-block w-100",
+                attrs: { src: movie.cover_img, alt: "..." },
+              }),
+            ]
+          )
+        }),
+        0
+      ),
+      _vm._v(" "),
+      _vm._m(0),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "carousel-control-next",
+          attrs: {
+            type: "button",
+            "data-bs-target": "#carouselExampleControls",
+            "data-bs-slide": "next",
+          },
+          on: {
+            click: function ($event) {
+              return _vm.$emit("next")
+            },
+          },
+        },
+        [
+          _c("span", {
+            staticClass: "carousel-control-next-icon",
+            attrs: { "aria-hidden": "true" },
+          }),
+          _vm._v(" "),
+          _c("span", { staticClass: "visually-hidden" }, [_vm._v("Next")]),
+        ]
+      ),
+    ]
+  )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "button",
+      {
+        staticClass: "carousel-control-prev",
+        attrs: {
+          type: "button",
+          "data-bs-target": "#carouselExampleControls",
+          "data-bs-slide": "prev",
+        },
+      },
+      [
+        _c("span", {
+          staticClass: "carousel-control-prev-icon",
+          attrs: { "aria-hidden": "true" },
+        }),
+        _vm._v(" "),
+        _c("span", { staticClass: "visually-hidden" }, [_vm._v("Previous")]),
+      ]
+    )
+  },
+]
 render._withStripped = true
 
 

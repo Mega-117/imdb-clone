@@ -1,5 +1,5 @@
 <template>
-  <!-- <div
+  <div
     id="carouselExampleControls"
     class="carousel slide"
     data-bs-ride="carousel"
@@ -33,8 +33,7 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-  </div> -->
-  <div></div>
+  </div>
 </template>
 
 <script>
