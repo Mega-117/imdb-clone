@@ -1,5 +1,4 @@
 <template>
-  <div>ciao</div>
   <!-- <div
     id="carouselExampleControls"
     class="carousel slide"
@@ -12,7 +11,7 @@
         v-for="(movie, i) in dataList"
         :key="movie.id"
       >
-        <img :src="movie.coverImg" class="d-block w-100" alt="..." />
+        <img :src="movie.cover_img" class="d-block w-100" alt="..." />
       </div>
     </div>
     <button
@@ -35,11 +34,12 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div> -->
+  <div></div>
 </template>
 
 <script>
 export default {
-  name: "Slider",
+  name: "slider",
   props: {
     dataList: Array,
   },

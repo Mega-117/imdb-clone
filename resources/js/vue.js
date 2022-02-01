@@ -1,5 +1,5 @@
-window.Vue = require('vue');
-Vue.component('Slider', require('./components/partials/Slider.vue').default);
+window.Vue = require('vue').default;
+Vue.component('slider', require('./components/partials/Slider.vue').default);
 
 const app = new Vue({
     el: '#root',
