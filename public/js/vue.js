@@ -8504,7 +8504,7 @@ if (inBrowser) {
   \*****************************************************/
 /***/ (() => {
 
-throw new Error("Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\n> <template>\n|   <div>\n|     <h1>slider</h1>");
+throw new Error("Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\n> <template>\n|   <div>ciao</div>\n|   <!-- <div");
 
 /***/ })
 
@@ -8583,7 +8583,7 @@ var __webpack_exports__ = {};
   !*** ./resources/js/vue.js ***!
   \*****************************/
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm.js");
-Vue.component('slider', (__webpack_require__(/*! ./components/partials/Slider.vue */ "./resources/js/components/partials/Slider.vue")["default"]));
+Vue.component('Slider', (__webpack_require__(/*! ./components/partials/Slider.vue */ "./resources/js/components/partials/Slider.vue")["default"]));
 var app = new Vue({
   el: '#root' //render: h => h(App)
 
